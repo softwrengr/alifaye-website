@@ -1,0 +1,140 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* full height for flex layout */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* header background */
+  padding: 10px 30px;
+  color: rgb(39, 73, 159); /* top section text color */
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left .logo {
+  max-height: 70px; /* smaller logo */
+  width: auto;
+}
+
+.header-left h1 {
+  font-size: 20px;
+  color: rgb(46, 102, 200); /* ensure h1 is green */
+}
+
+/* Navigation menu */
+nav {
+  flex: 1; /* take remaining space to center menu */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: rgb(45, 87, 176); /* menu text green */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Banner below header */
+.banner {
+  width: 100%;
+  height: 150px;             /* fixed height */
+  background-color: orange !important;  /* force orange */
+  color: white;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;        /* ensure text center for multi-line */
+}
+
+.banner span {
+  margin: 0 15px;
+}
+
+
+main {
+  flex: 1;
+  padding: 0;              /* no extra padding */
+  background-color: #f0f0f0;
+}
+
+.hero-section {
+  width: 100%;             /* full viewport width */
+}
+
+.hero-image {
+  width: 100%;             /* full viewport width */
+  height: 700px;            /* fixed height for better cover */
+  object-fit: cover;        /* fills area nicely */
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

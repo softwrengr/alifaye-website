@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Apple",
+      "price": "2 AED/kg",
+      "image": "/images/apple.jpg"
+    },
+    {
+      "name": "Milk",
+      "price": "5 AED",
+      "image": "/images/milk.jpg"
+    },
+    {
+      "name": "Rice",
+      "price": "10 AED/kg",
+      "image": "/images/rice.jpg"
+    },
+    {
+      "name": "Banana",
+      "price": "1.5 AED/kg",
+      "image": "/images/banana.jpg"
+    },
+    {
+      "name": "Bread",
+      "price": "3 AED",
+      "image": "/images/bread.jpg"
+    },
+    {
+      "name": "Eggs (12 pcs)",
+      "price": "8 AED",
+      "image": "/images/eggs.jpg"
+    }
+  ]
+  
